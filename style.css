@@ -53,7 +53,7 @@ ul li {
     transform: rotateY(-30deg) rotateX(15deg);
     position: absolute;
     border-bottom: 4px solid rgba(0, 0, 0, 0.2);
-    mix-blend-mode: luminosity;
+    mix-blend-mode: multiply;
 }
 
 ul li:nth-child(1) {
@@ -72,6 +72,23 @@ ul li:nth-child(3) {
     top: 105px;
 }
 
+ul li:hover {
+    transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+    transition: transform 0.4s ease-out;
+    z-index: 3;
+    mix-blend-mode: normal;
+}
+
 img {
     width: 70px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#left > p {
+    color: rgb(73,73,73);
+    line-height: 1.5em;
 }
