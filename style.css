@@ -18,6 +18,15 @@ body {
 }
 
 .background {
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     z-index: -1;
     background-color: #287dd8;
+}
+
+.background2 {
+    -webkit-clip-path: polygon(81% 0, 100% 50%, 84% 100%, 9% 100%, 38% 49%, 11% 0);
+    clip-path: polygon(81% 0, 100% 50%, 84% 100%, 9% 100%, 38% 49%, 11% 0);
+    z-index: -2;
+    background-color: #2370c2;
 }
