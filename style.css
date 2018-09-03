@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.background, .background2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.background {
+    z-index: -1;
+    background-color: #287dd8;
+}
