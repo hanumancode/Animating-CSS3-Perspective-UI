@@ -21,12 +21,56 @@ body {
     -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     z-index: -1;
-    background-color: #287dd8;
+    background-color: #bf9b30;
 }
 
 .background2 {
     -webkit-clip-path: polygon(81% 0, 100% 50%, 84% 100%, 9% 100%, 38% 49%, 11% 0);
     clip-path: polygon(81% 0, 100% 50%, 84% 100%, 9% 100%, 38% 49%, 11% 0);
     z-index: -2;
-    background-color: #2370c2;
+    background-color: #a67c00;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: auto;
+    align-self: center;
+    margin: 0 50px;
+}
+
+ul {
+    list-style-type: none;
+    perspective: 1000px;
+}
+
+ul li {
+    display: grid;
+    grid-template-columns: 20% auto;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transform: rotateY(-30deg) rotateX(15deg);
+    position: absolute;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+ul li:nth-child(1) {
+    background: #bfe8fc;
+    top: -105px;
+    z-index: 2;
+}
+
+ul li:nth-child(2) {
+    background: #faffc8;
+    z-index: 1;
+}
+
+ul li:nth-child(3) {
+    background: rgb(242, 228, 255);
+    top: 105px;
+}
+
+img {
+    width: 70px;
 }
